@@ -31,6 +31,7 @@ render() {
       <h3 
         name="name" 
         contentEditable="true"
+        suppressContentEditableWarning={true}
         onKeyUp={(e) => this.handleEdits(e, 'name')}
         onBlur={this.handleCompletedChange}>
         {this.state.name}
@@ -38,6 +39,7 @@ render() {
       <p 
         name="quote" 
         contentEditable="true"
+        suppressContentEditableWarning={true}
         onKeyUp={e => this.handleEdits(e)}
         onBlur={this.handleCompletedChange}>
         "{this.state.quote}"
@@ -45,6 +47,7 @@ render() {
       <h4 
         name="superlative" 
         contentEditable="true"
+        suppressContentEditableWarning={true}
         onKeyUp={this.handleEdits}
         onBlur={this.handleCompletedChange}>
         {this.state.superlative}

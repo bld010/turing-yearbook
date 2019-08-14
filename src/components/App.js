@@ -3,6 +3,7 @@ import Cohort from './Cohort';
 import people from '../data/yearbook-data.js';
 import Form from './Form.js';
 import './App.css';
+import './Cohort.css'
 
 class App extends Component {
   constructor() {
@@ -50,11 +51,11 @@ class App extends Component {
           <h1>Turing Yearbook</h1>
           <Form addNewStudent={this.addNewStudent} />
         </header>
-        <div>
+        <div className="Cohort">
           <h2>Staff</h2>
           <Cohort people={this.state.staff} cohortType="staff" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
         </div>
-        <div>
+        <div className="Cohort">
           <h2>Students</h2>
           <Cohort people={this.state.students} cohortType="students" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
         </div>

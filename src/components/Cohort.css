@@ -1,4 +1,6 @@
 .Cohort {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
 }

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: url('https://ak9.picdn.net/shutterstock/videos/1007204479/thumb/1.jpg');
+  background: white;
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -20,7 +20,9 @@ body {
 }
 
 h1 {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: pink;
+  margin: 0 auto 30px auto;
   padding: 10px;
-  color: limegreen;
+  color: dodgerblue;
+  font-size: 18px;
 }
