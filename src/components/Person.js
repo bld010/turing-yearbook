@@ -6,7 +6,6 @@ class Person extends Component {
     super(props)
     this.state = {
       name: this.props.person.name,
-      key: this.props.person.id,
       id: this.props.person.id,
       quote: this.props.person.quote,
       superlative: this.props.person.superlative,
