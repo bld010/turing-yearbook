@@ -10,23 +10,22 @@ class Person extends Component {
       quote: this.props.person.quote,
       superlative: this.props.person.superlative,
       photo: this.props.person.photo,
-      updatePeople: this.props.updatePeople,
-      cohortType: this.props.cohortType
+      cohortType: this.props.cohortType, 
     }
   }
 
 handleEdits(e, partToUpdate) {
-  
   this.setState({[partToUpdate]: e.target.innerText})
 }
 
 handleCompletedChange = () => {
-  this.state.updatePeople(this.state)
+  this.props.updatePeople(this.state)
 }
   
 render() {
   return (
     <div className="Person">
+      <button onClick={() => this.props.deletePerson(this.state.id, this.state.cohortType)}>x</button>
       <img src= {this.state.photo} alt="Person"></img>
       <h3 
         name="name" 

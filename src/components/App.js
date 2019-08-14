@@ -19,6 +19,14 @@ class App extends Component {
     })
   }
 
+  deletePerson = (id, cohortType) => {
+    let updatedArray = this.state[cohortType].filter(person => person.id !== id)
+    console.log(updatedArray)
+    this.setState({
+      [cohortType]: updatedArray
+    })
+  } 
+
   updatePeople = (changedPerson) => {
     let updatedPerson = this.state[changedPerson.cohortType].find(person => person.id === changedPerson.id);
     let index = this.state[changedPerson.cohortType].indexOf(updatedPerson);
@@ -44,11 +52,11 @@ class App extends Component {
         </header>
         <div>
           <h2>Staff</h2>
-          <Cohort people={this.state.staff} cohortType="staff" updatePeople={this.updatePeople} />
+          <Cohort people={this.state.staff} cohortType="staff" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
         </div>
         <div>
           <h2>Students</h2>
-          <Cohort people={this.state.students} cohortType="students" updatePeople={this.updatePeople} />
+          <Cohort people={this.state.students} cohortType="students" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
         </div>
       </div>
     );
