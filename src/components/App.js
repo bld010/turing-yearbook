@@ -19,6 +19,13 @@ class App extends Component {
     })
   }
 
+  updatePeople = (changedPerson) => {
+    let updatedPerson = this.state[changedPerson.cohortType].find(person => person.id === changedPerson.id);
+    let index = this.state[changedPerson.cohortType].indexOf(updatedPerson);
+    let updatedArray = this.state[changedPerson.cohortType].slice()
+    updatedArray.splice(index, 1, {id: changedPerson.id, name: changedPerson.name, quote: changedPerson.quote, superlative: changedPerson.superlative, photo: changedPerson.photo});
+  }
+
   render() {
     return (
       <div className="App">
@@ -28,11 +35,11 @@ class App extends Component {
         </header>
         <div>
           <h2>Staff</h2>
-          <Cohort people={this.state.staff} />
+          <Cohort people={this.state.staff} cohortType="staff" updatePeople={this.updatePeople} />
         </div>
         <div>
           <h2>Students</h2>
-          <Cohort people={this.state.students} />
+          <Cohort people={this.state.students} cohortType="students" updatePeople={this.updatePeople} />
         </div>
       </div>
     );
