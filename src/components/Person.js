@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import './Person.css';
 
 class Person extends Component {
-  constructor(props) {
-    super(props)
+  constructor({ person, cohortType, deletePerson}) {
+    super({ person, cohortType, deletePerson})
     this.state = {
-      name: this.props.person.name,
-      id: this.props.person.id,
-      quote: this.props.person.quote,
-      superlative: this.props.person.superlative,
-      photo: this.props.person.photo,
-      cohortType: this.props.cohortType, 
+      name: person.name,
+      id: person.id,
+      quote: person.quote,
+      superlative: person.superlative,
+      photo: person.photo,
+      cohortType: cohortType, 
+      deletePerson: deletePerson
     }
   }
 
@@ -25,7 +26,7 @@ handleCompletedChange = () => {
 render() {
   return (
     <div className="Person">
-      <button onClick={() => this.props.deletePerson(this.state.id, this.state.cohortType)}>x</button>
+      <button onClick={() => this.state.deletePerson(this.state.id, this.state.cohortType)}>x</button>
       <img src= {this.state.photo} alt="Person"></img>
       <h3 
         name="name" 
