@@ -1,0 +1,21 @@
+.Person {
+  height: 350px;
+  width: 220px;
+  border: 2px solid black;
+  background: blanchedalmond;
+  margin: 20px;
+  box-shadow: 8px 8px black;
+}
+
+.Person img {
+  max-height: 100px;
+  max-width: 180px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.Person h4, 
+.Person p {
+  margin: 20px 10px 20px 10px;
+}
+
