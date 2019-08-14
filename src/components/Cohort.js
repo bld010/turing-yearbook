@@ -2,12 +2,10 @@ import React from 'react';
 import Person from './Person';
 import './Cohort.css';
 
-const Cohort = (props) => {
+const Cohort = ({ people }) => {
   return (
     <div className="Cohort">
-      {props.staff.map(staffMember => {
-         return <Person key={staffMember.name}  staffMember={staffMember}/>
-      })}
+      {people.map(person => <Person key={person.name}  person={person} />)}
     </div>
   )
   
