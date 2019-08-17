@@ -16,7 +16,7 @@ class Person extends Component {
   }
 
 handleEdits(e, partToUpdate) {
-  this.setState({[partToUpdate]: e.target.innerText})
+  this.setState({[e.target.id]: e.target.innerText})
 }
 
 handleCompletedChange = () => {
@@ -26,10 +26,12 @@ handleCompletedChange = () => {
 render() {
   return (
     <div className="Person">
-      <button onClick={() => this.state.deletePerson(this.state.id, this.state.cohortType)}>x</button>
+      <div>
+        <button onClick={() => this.state.deletePerson(this.state.id, this.state.cohortType)}>x</button>
+      </div>
       <img src= {this.state.photo} alt="Person"></img>
       <h3 
-        name="name" 
+        id="name" 
         contentEditable="true"
         suppressContentEditableWarning={true}
         onKeyUp={(e) => this.handleEdits(e, 'name')}
@@ -37,7 +39,7 @@ render() {
         {this.state.name}
       </h3>
       <p 
-        name="quote" 
+        id="quote" 
         contentEditable="true"
         suppressContentEditableWarning={true}
         onKeyUp={e => this.handleEdits(e)}
@@ -45,7 +47,7 @@ render() {
         "{this.state.quote}"
       </p>
       <h4 
-        name="superlative" 
+        id="superlative" 
         contentEditable="true"
         suppressContentEditableWarning={true}
         onKeyUp={this.handleEdits}
