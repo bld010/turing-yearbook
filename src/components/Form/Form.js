@@ -28,7 +28,9 @@ class Form extends Component {
 
   render() {
     return(
-      <form class="Form">
+      
+      <form className="Form">
+        <h3>Add a New Student</h3>
         <input
           type="text"
           name="name"

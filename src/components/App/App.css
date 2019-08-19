@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: white;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 70px 30px 70px;
+}
+
+h1 {
+  padding-top: 10px;
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300; 
+  border-bottom: 1px solid lightgrey;
+  position: fixed;
+  width: 90%;
+  height: 40px;
+  left: 70px;
+  background: white;
+  z-index: 2;
+  margin: 0;
+}
+
+.people {
+  border-left: 1px solid lightgrey;
+  padding-left: 20px;
+  margin: 70px 0 0 220px;
+}
+
+h2 {
+  margin: 15px 0 5px 5px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: auto;
+  margin: 70px auto 0 auto;
+}

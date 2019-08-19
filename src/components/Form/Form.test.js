@@ -1,19 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Form from './Form';
 import './Form.css';
 
 describe('Form', ()=> {
 
-
-
-  
   it('should match the snapshot', () => {
     const wrapper = shallow(<Form />)
   
     expect(wrapper).toMatchSnapshot();
   })
-  
   //How to do this without spies?
   
   it('should fire handleChange to update state when name is edited', () => {
@@ -47,17 +44,13 @@ describe('Form', ()=> {
   
   })
 
-  it('should fire handleAddNewStudent when button is clicked', () => {
-    const wrapper = shallow(<Form />)
-    const mockHandleAddNewStudent = jest.fn();
-    
-
-    wrapper.find('button').simulate('click')
-
-    
-  })
+  it('should fire addNewStudent when button is clicked', () => {
+    const mockAddNewStudent = jest.fn();
+    const eventMock = { preventDefault: () => {}}
+    const wrapper = shallow(<Form addNewStudent={mockAddNewStudent} />)
+   
+    wrapper.find('button').simulate('click', eventMock);
+    expect(mockAddNewStudent).toHaveBeenCalled();
+  }) 
 })
-
-
-//Test button click firing handleAddNewStudent
 

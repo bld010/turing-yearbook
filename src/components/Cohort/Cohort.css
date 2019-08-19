@@ -1,6 +1,12 @@
-.Cohort {
+
+div .Cohort {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
+}
+
+.Cohort h2 {
+  display: block;
+  text-align: left; 
 }

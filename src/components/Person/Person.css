@@ -1,0 +1,78 @@
+
+.Person {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  background: white;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px 2px #e1e1e1;
+}
+
+.Person img {
+  max-width: 90%;
+  max-height: 100px;
+  border: 1px solid black;
+}
+
+.superlative img,
+.quote img {
+  border: 0px;
+  height: 20px;
+}
+
+.quote,
+.superlative {
+  padding-left: 15px;
+}
+
+.quote>p {
+  min-height: 30px;
+}
+
+.Person h4, 
+.Person p {
+  margin: 0px 10px 20px 10px;
+  height: 20px;
+  font-size: 14px;
+}
+
+.Person button {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+}
+
+.Person button:hover {
+  cursor: pointer;
+}
+
+.Person div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 5px 5px 10px 0px;
+}
+
+.Person h3 {
+  margin: 10px 0 10px 0;
+}
+
+.staff>h3 {
+  background-color: #8bf0ba;
+  padding: 0 8px 0 8px;
+  background-image: linear-gradient(to right, #8bf0ba, #b6f3d3);
+}
+
+.students>h3 {
+  background-color:  #f2b1d8;
+  padding: 0 8px 0 8px;
+  background-image: linear-gradient(to right,  #f2b1d8,  #f5d1e8);
+}

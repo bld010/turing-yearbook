@@ -25,7 +25,7 @@ handleCompletedChange = () => {
   
 render() {
   return (
-    <div className="Person">
+    <div className={this.state.cohortType + " Person"}>
       <div>
         <button onClick={() => this.state.deletePerson(this.state.id, this.state.cohortType)}>x</button>
       </div>
@@ -38,22 +38,28 @@ render() {
         onBlur={this.handleCompletedChange}>
         {this.state.name}
       </h3>
-      <p 
-        id="quote" 
-        contentEditable="true"
-        suppressContentEditableWarning={true}
-        onKeyUp={e => this.handleEdits(e)}
-        onBlur={this.handleCompletedChange}>
-        "{this.state.quote}"
-      </p>
-      <h4 
-        id="superlative" 
-        contentEditable="true"
-        suppressContentEditableWarning={true}
-        onKeyUp={this.handleEdits}
-        onBlur={this.handleCompletedChange}>
-        {this.state.superlative}
-      </h4>
+      <div className="quote">
+        <img src={ require('./conversation.svg') } alt="quote bubble"></img>
+        <p 
+          id="quote" 
+          contentEditable="true"
+          suppressContentEditableWarning={true}
+          onKeyUp={e => this.handleEdits(e)}
+          onBlur={this.handleCompletedChange}>
+          "{this.state.quote}"
+        </p>
+      </div>
+      <div className="superlative">
+        <img src={ require('./medal.svg') } alt="medal icon"></img>
+        <h4 
+          id="superlative" 
+          contentEditable="true"
+          suppressContentEditableWarning={true}
+          onKeyUp={this.handleEdits}
+          onBlur={this.handleCompletedChange}>
+          {this.state.superlative}
+        </h4>
+      </div>
     </div>
   )
 }
