@@ -22,7 +22,6 @@ class App extends Component {
 
   deletePerson = (id, cohortType) => {
     let updatedArray = this.state[cohortType].filter(person => person.id !== id)
-    console.log(updatedArray)
     this.setState({
       [cohortType]: updatedArray
     })
@@ -55,7 +54,7 @@ class App extends Component {
             <Form addNewStudent={this.addNewStudent} />
           </section>
           <section className="people">
-              <Cohort people={this.state.staff} cohortType="staff" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
+              <Cohort people={this.state.staff} cohortType="staff" deletePerson={this.deletePerson} updatePeople={this.updatePeople} /> 
               <Cohort people={this.state.students} cohortType="students" deletePerson={this.deletePerson} updatePeople={this.updatePeople} />
           </section>
         </main>
