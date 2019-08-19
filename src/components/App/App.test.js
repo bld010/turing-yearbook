@@ -11,7 +11,6 @@ describe('App', () => {
     instance = wrapper.instance();
   })
   it('should match the snapshot with all correct data', () => {
-    // const wrapper = shallow(<App />)
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -43,14 +42,14 @@ describe('App', () => {
     
   })
   it('should update state when the content is edited', () => {
-    const mockPerson = {id: 13, name: 'Jeff', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Tell a Dad Joke', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
+    const mockOriginalPerson = {id: 13, name: 'Jeff', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Tell a Dad Joke', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
     const mockChangedPerson = {id: 13, name: 'Jeff Casimir', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Take Up More Than Allotted Time', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg', cohortType: 'staff'};
     const mockChangedPersonObject = {id: 13, name: 'Jeff Casimir', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Take Up More Than Allotted Time', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
     
     instance.updatePeople(mockChangedPerson)
     
     const expected = instance.state.staff.find(person => person.id === 13)
-    const isOriginalPersonInState = instance.state.staff.includes(mockPerson)
+    const isOriginalPersonInState = instance.state.staff.includes(mockOriginalPerson)
 
     expect(expected).toEqual(mockChangedPersonObject);
     expect(isOriginalPersonInState).toEqual(false);

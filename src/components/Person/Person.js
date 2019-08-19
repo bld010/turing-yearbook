@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Person.css';
 
 class Person extends Component {
-  constructor({ person, cohortType, deletePerson}) {
-    super({ person, cohortType, deletePerson})
+  constructor({ person, cohortType, deletePerson, updatePeople}) {
+    super()
     this.state = {
       name: person.name,
       id: person.id,
@@ -11,16 +11,14 @@ class Person extends Component {
       superlative: person.superlative,
       photo: person.photo,
       cohortType: cohortType, 
-      deletePerson: deletePerson
+      deletePerson: deletePerson,
+      updatePeople: updatePeople,
+      handleCompletedChange: () => {this.state.updatePeople(this.state)}
     }
   }
 
 handleEdits(e, partToUpdate) {
   this.setState({[e.target.id]: e.target.innerText})
-}
-
-handleCompletedChange = () => {
-  this.props.updatePeople(this.state)
 }
   
 render() {
@@ -35,7 +33,7 @@ render() {
         contentEditable="true"
         suppressContentEditableWarning={true}
         onKeyUp={(e) => this.handleEdits(e, 'name')}
-        onBlur={this.handleCompletedChange}>
+        onBlur={this.state.handleCompletedChange}>
         {this.state.name}
       </h3>
       <div className="quote">
@@ -44,8 +42,8 @@ render() {
           id="quote" 
           contentEditable="true"
           suppressContentEditableWarning={true}
-          onKeyUp={e => this.handleEdits(e)}
-          onBlur={this.handleCompletedChange}>
+          onKeyUp={e => this.handleEdits(e, 'quote')}
+          onBlur={this.state.handleCompletedChange}>
           "{this.state.quote}"
         </p>
       </div>
@@ -55,8 +53,8 @@ render() {
           id="superlative" 
           contentEditable="true"
           suppressContentEditableWarning={true}
-          onKeyUp={this.handleEdits}
-          onBlur={this.handleCompletedChange}>
+          onKeyUp={e => this.handleEdits(e, 'superlative')}
+          onBlur={this.state.handleCompletedChange}>
           {this.state.superlative}
         </h4>
       </div>
