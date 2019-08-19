@@ -3,10 +3,12 @@ div .Cohort {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: center;
+  justify-content: left;
 }
 
 .Cohort h2 {
   display: block;
   text-align: left; 
+  font-weight: 300;
+  text-transform: uppercase;
 }
