@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match the snapshot with all correct data passed in 1`] = `
+exports[`Person should match the snapshot with all correct data passed in 1`] = `
 <div
-  className="Person"
+  className="staff Person"
 >
   <div>
     <button
@@ -41,7 +41,6 @@ exports[`should match the snapshot with all correct data passed in 1`] = `
       }
     />
     <p
-      className="zoom"
       contentEditable="true"
       id="quote"
       onBlur={[Function]}

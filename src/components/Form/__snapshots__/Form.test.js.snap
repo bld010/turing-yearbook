@@ -4,6 +4,9 @@ exports[`Form should match the snapshot 1`] = `
 <form
   className="Form"
 >
+  <h3>
+    Add a New Student
+  </h3>
   <input
     name="name"
     onChange={[Function]}

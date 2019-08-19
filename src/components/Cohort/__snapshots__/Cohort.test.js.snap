@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cohort should match the snapshot with all correct data 1`] = `
+<section
+  className="Cohort"
+>
+  <h2>
+    staff
+  </h2>
+  <div
+    className="staff Cohort"
+  >
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Eric"
+      person={
+        Object {
+          "id": 1,
+          "name": "Eric",
+          "photo": "./eric.jpg",
+          "quote": "You miss all the shots you don't take.",
+          "superlative": "Most Likely to Win the PGA",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Amy"
+      person={
+        Object {
+          "id": 2,
+          "name": "Amy",
+          "photo": "./amy.jpg",
+          "quote": "I believe in you, cuties!",
+          "superlative": "Most Likely to Be an Actual Superhero",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Khalid"
+      person={
+        Object {
+          "id": 3,
+          "name": "Khalid",
+          "photo": "./khalid.png",
+          "quote": "Don't put the world on your shoulders.",
+          "superlative": "Most Likely to Save the Planet from Alien Invasion",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Travis"
+      person={
+        Object {
+          "id": 4,
+          "name": "Travis",
+          "photo": "./travis.jpg",
+          "quote": "You do you.",
+          "superlative": "Most Likely to Win a Grammy",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Leta"
+      person={
+        Object {
+          "id": 5,
+          "name": "Leta",
+          "photo": "./leta.jpg",
+          "quote": "It's okay to be kind of a mess.",
+          "superlative": "Most Likely to Go to the Moon",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Christie"
+      person={
+        Object {
+          "id": 6,
+          "name": "Christie",
+          "photo": "./christie.jpg",
+          "quote": "Every journey begins with a single step. So take the damn step!",
+          "superlative": "Most Likely to Be President",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Brittany"
+      person={
+        Object {
+          "id": 7,
+          "name": "Brittany",
+          "photo": "./brittany.jpg",
+          "quote": "It was Robbie.",
+          "superlative": "Most Likely to Get Away with Murder",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Robbie"
+      person={
+        Object {
+          "id": 8,
+          "name": "Robbie",
+          "photo": "./robbie.jpg",
+          "quote": "Cool.",
+          "superlative": "Most Likely to Be Accused of Murder",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Will"
+      person={
+        Object {
+          "id": 9,
+          "name": "Will",
+          "photo": "./will.jpg",
+          "quote": "Stop worrying and just do the thing.",
+          "superlative": "Most Likely to Invent Cold Fusion",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Pam"
+      person={
+        Object {
+          "id": 10,
+          "name": "Pam",
+          "photo": "./pam.jpg",
+          "quote": "Shit!",
+          "superlative": "Most Likely to Win a Gold Medal",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="David"
+      person={
+        Object {
+          "id": 11,
+          "name": "David",
+          "photo": "./david.JPG",
+          "quote": "I love git.",
+          "superlative": "Most Likely to Be Eaten by a Shark",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Louisa"
+      person={
+        Object {
+          "id": 12,
+          "name": "Louisa",
+          "photo": "./louisa.jpg",
+          "quote": "YOLO",
+          "superlative": "Most Likely to Win a Knife Fight",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+    <Person
+      cohortType="staff"
+      deletePerson={[MockFunction]}
+      key="Jeff"
+      person={
+        Object {
+          "id": 13,
+          "name": "Jeff",
+          "photo": "https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg",
+          "quote": "::thoughtful nonsense::",
+          "superlative": "Most Likely to Tell a Dad Joke",
+        }
+      }
+      updatePeople={[MockFunction]}
+    />
+  </div>
+</section>
+`;

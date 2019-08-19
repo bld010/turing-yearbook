@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match the snapshot with all correct data 1`] = `
+exports[`App should match the snapshot with all correct data 1`] = `
 <div
   className="App"
 >
@@ -8,316 +8,312 @@ exports[`should match the snapshot with all correct data 1`] = `
     className="App-header"
   >
     <h1>
-      Turing Yearbook
+      TuringBook
     </h1>
-    <Form
-      addNewStudent={[Function]}
-    />
   </header>
-  <div
-    className="Cohort"
-  >
-    <h2>
-      Staff
-    </h2>
-    <Cohort
-      cohortType="staff"
-      deletePerson={[Function]}
-      people={
-        Array [
-          Object {
-            "id": 1,
-            "name": "Eric",
-            "photo": "./eric.jpg",
-            "quote": "You miss all the shots you don't take.",
-            "superlative": "Most Likely to Win the PGA",
-          },
-          Object {
-            "id": 2,
-            "name": "Amy",
-            "photo": "./amy.jpg",
-            "quote": "I believe in you, cuties!",
-            "superlative": "Most Likely to Be an Actual Superhero",
-          },
-          Object {
-            "id": 3,
-            "name": "Khalid",
-            "photo": "./khalid.png",
-            "quote": "Don't put the world on your shoulders.",
-            "superlative": "Most Likely to Save the Planet from Alien Invasion",
-          },
-          Object {
-            "id": 4,
-            "name": "Travis",
-            "photo": "./travis.jpg",
-            "quote": "You do you.",
-            "superlative": "Most Likely to Win a Grammy",
-          },
-          Object {
-            "id": 5,
-            "name": "Leta",
-            "photo": "./leta.jpg",
-            "quote": "It's okay to be kind of a mess.",
-            "superlative": "Most Likely to Go to the Moon",
-          },
-          Object {
-            "id": 6,
-            "name": "Christie",
-            "photo": "./christie.jpg",
-            "quote": "Every journey begins with a single step. So take the damn step!",
-            "superlative": "Most Likely to Be President",
-          },
-          Object {
-            "id": 7,
-            "name": "Brittany",
-            "photo": "./brittany.jpg",
-            "quote": "It was Robbie.",
-            "superlative": "Most Likely to Get Away with Murder",
-          },
-          Object {
-            "id": 8,
-            "name": "Robbie",
-            "photo": "./robbie.jpg",
-            "quote": "Cool.",
-            "superlative": "Most Likely to Be Accused of Murder",
-          },
-          Object {
-            "id": 9,
-            "name": "Will",
-            "photo": "./will.jpg",
-            "quote": "Stop worrying and just do the thing.",
-            "superlative": "Most Likely to Invent Cold Fusion",
-          },
-          Object {
-            "id": 10,
-            "name": "Pam",
-            "photo": "./pam.jpg",
-            "quote": "Shit!",
-            "superlative": "Most Likely to Win a Gold Medal",
-          },
-          Object {
-            "id": 11,
-            "name": "David",
-            "photo": "./david.JPG",
-            "quote": "I love git.",
-            "superlative": "Most Likely to Be Eaten by a Shark",
-          },
-          Object {
-            "id": 12,
-            "name": "Louisa",
-            "photo": "./louisa.jpg",
-            "quote": "YOLO",
-            "superlative": "Most Likely to Win a Knife Fight",
-          },
-          Object {
-            "id": 13,
-            "name": "Jeff",
-            "photo": "https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg",
-            "quote": "::thoughtful nonsense::",
-            "superlative": "Most Likely to Tell a Dad Joke",
-          },
-        ]
-      }
-      updatePeople={[Function]}
-    />
-  </div>
-  <div
-    className="Cohort"
-  >
-    <h2>
-      Students
-    </h2>
-    <Cohort
-      cohortType="students"
-      deletePerson={[Function]}
-      people={
-        Array [
-          Object {
-            "id": 21,
-            "name": "David",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "What is going on!?",
-            "superlative": "Most Likely To Win the Code Wars",
-          },
-          Object {
-            "id": 22,
-            "name": "Sam",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "Please don't partner me with her again",
-            "superlative": "Most Likely to Be Currently Watching a K-Drama",
-          },
-          Object {
-            "id": 23,
-            "name": "Chris",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "In all honesty ...",
-            "superlative": "Most Likely To Become A CSS God",
-          },
-          Object {
-            "id": 24,
-            "name": "Alyssa",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "These tables are gross",
-            "superlative": "Most Likely to Win us Cleanliness Awards",
-          },
-          Object {
-            "id": 25,
-            "name": "Evelyn",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 26,
-            "name": "Fatima",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 27,
-            "name": "Glen",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 28,
-            "name": "Harriet",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 29,
-            "name": "Isabella",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 210,
-            "name": "Jorge",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 211,
-            "name": "Kelly",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 212,
-            "name": "Lucia",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 213,
-            "name": "Mei",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 214,
-            "name": "Nina",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 215,
-            "name": "Ophus",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 216,
-            "name": "Parker",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 217,
-            "name": "Quin",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 218,
-            "name": "Rosa",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 219,
-            "name": "Sam",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 220,
-            "name": "Tyrese",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 221,
-            "name": "Ursula",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 222,
-            "name": "Vic",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 223,
-            "name": "Whitney",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 224,
-            "name": "Xavier",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 225,
-            "name": "Yolanda",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-          Object {
-            "id": 226,
-            "name": "Zach",
-            "photo": "https://placekitten.com/200/300",
-            "quote": "",
-            "superlative": "",
-          },
-        ]
-      }
-      updatePeople={[Function]}
-    />
-  </div>
+  <main>
+    <section
+      className="sidebar"
+    >
+      <Form
+        addNewStudent={[Function]}
+      />
+    </section>
+    <section
+      className="people"
+    >
+      <Cohort
+        cohortType="staff"
+        deletePerson={[Function]}
+        people={
+          Array [
+            Object {
+              "id": 1,
+              "name": "Eric",
+              "photo": "./eric.jpg",
+              "quote": "You miss all the shots you don't take.",
+              "superlative": "Most Likely to Win the PGA",
+            },
+            Object {
+              "id": 2,
+              "name": "Amy",
+              "photo": "./amy.jpg",
+              "quote": "I believe in you, cuties!",
+              "superlative": "Most Likely to Be an Actual Superhero",
+            },
+            Object {
+              "id": 3,
+              "name": "Khalid",
+              "photo": "./khalid.png",
+              "quote": "Don't put the world on your shoulders.",
+              "superlative": "Most Likely to Save the Planet from Alien Invasion",
+            },
+            Object {
+              "id": 4,
+              "name": "Travis",
+              "photo": "./travis.jpg",
+              "quote": "You do you.",
+              "superlative": "Most Likely to Win a Grammy",
+            },
+            Object {
+              "id": 5,
+              "name": "Leta",
+              "photo": "./leta.jpg",
+              "quote": "It's okay to be kind of a mess.",
+              "superlative": "Most Likely to Go to the Moon",
+            },
+            Object {
+              "id": 6,
+              "name": "Christie",
+              "photo": "./christie.jpg",
+              "quote": "Every journey begins with a single step. So take the damn step!",
+              "superlative": "Most Likely to Be President",
+            },
+            Object {
+              "id": 7,
+              "name": "Brittany",
+              "photo": "./brittany.jpg",
+              "quote": "It was Robbie.",
+              "superlative": "Most Likely to Get Away with Murder",
+            },
+            Object {
+              "id": 8,
+              "name": "Robbie",
+              "photo": "./robbie.jpg",
+              "quote": "Cool.",
+              "superlative": "Most Likely to Be Accused of Murder",
+            },
+            Object {
+              "id": 9,
+              "name": "Will",
+              "photo": "./will.jpg",
+              "quote": "Stop worrying and just do the thing.",
+              "superlative": "Most Likely to Invent Cold Fusion",
+            },
+            Object {
+              "id": 10,
+              "name": "Pam",
+              "photo": "./pam.jpg",
+              "quote": "Shit!",
+              "superlative": "Most Likely to Win a Gold Medal",
+            },
+            Object {
+              "id": 11,
+              "name": "David",
+              "photo": "./david.JPG",
+              "quote": "I love git.",
+              "superlative": "Most Likely to Be Eaten by a Shark",
+            },
+            Object {
+              "id": 12,
+              "name": "Louisa",
+              "photo": "./louisa.jpg",
+              "quote": "YOLO",
+              "superlative": "Most Likely to Win a Knife Fight",
+            },
+            Object {
+              "id": 13,
+              "name": "Jeff",
+              "photo": "https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg",
+              "quote": "::thoughtful nonsense::",
+              "superlative": "Most Likely to Tell a Dad Joke",
+            },
+          ]
+        }
+        updatePeople={[Function]}
+      />
+      <Cohort
+        cohortType="students"
+        deletePerson={[Function]}
+        people={
+          Array [
+            Object {
+              "id": 21,
+              "name": "David",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "What is going on!?",
+              "superlative": "Most Likely To Win the Code Wars",
+            },
+            Object {
+              "id": 22,
+              "name": "Sam",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "Please don't partner me with her again",
+              "superlative": "Most Likely to See Every Movie Ever",
+            },
+            Object {
+              "id": 23,
+              "name": "Chris",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "In all honesty ...",
+              "superlative": "Most Likely To Become A CSS God",
+            },
+            Object {
+              "id": 24,
+              "name": "Alyssa",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "These tables are gross",
+              "superlative": "Most Likely to Win Us Cleanliness Awards",
+            },
+            Object {
+              "id": 25,
+              "name": "Evelyn",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "What is this?",
+              "superlative": "Most Likely to Not Exist",
+            },
+            Object {
+              "id": 26,
+              "name": "Fatima",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 27,
+              "name": "Glen",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 28,
+              "name": "Harriet",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 29,
+              "name": "Isabella",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 210,
+              "name": "Jorge",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 211,
+              "name": "Kelly",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 212,
+              "name": "Lucia",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 213,
+              "name": "Mei",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 214,
+              "name": "Nina",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 215,
+              "name": "Ophus",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 216,
+              "name": "Parker",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 217,
+              "name": "Quin",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 218,
+              "name": "Rosa",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 219,
+              "name": "Sam",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 220,
+              "name": "Tyrese",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 221,
+              "name": "Ursula",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 222,
+              "name": "Vic",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 223,
+              "name": "Whitney",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 224,
+              "name": "Xavier",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 225,
+              "name": "Yolanda",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+            Object {
+              "id": 226,
+              "name": "Zach",
+              "photo": "https://placekitten.com/200/300",
+              "quote": "",
+              "superlative": "",
+            },
+          ]
+        }
+        updatePeople={[Function]}
+      />
+    </section>
+  </main>
 </div>
 `;

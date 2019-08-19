@@ -8,14 +8,13 @@ describe('Form', ()=> {
 
   it('should match the snapshot', () => {
     const wrapper = shallow(<Form />)
-  
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();  
   })
   //How to do this without spies?
   
   it('should fire handleChange to update state when name is edited', () => {
     const wrapper = shallow(<Form />);
-     
+  
     let nameInput = wrapper.find('input[name="name"]');
     
     nameInput.simulate('change', { target: { name: 'name', value: 'Brianna'}});
