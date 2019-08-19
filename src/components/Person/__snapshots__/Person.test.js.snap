@@ -19,7 +19,6 @@ exports[`Person should match the snapshot with all correct data passed in 1`] = 
     contentEditable="true"
     id="name"
     onBlur={[Function]}
-    onKeyUp={[Function]}
     suppressContentEditableWarning={true}
   >
     Robbie
@@ -44,12 +43,9 @@ exports[`Person should match the snapshot with all correct data passed in 1`] = 
       contentEditable="true"
       id="quote"
       onBlur={[Function]}
-      onKeyUp={[Function]}
       suppressContentEditableWarning={true}
     >
-      "
       Cool.
-      "
     </p>
   </div>
   <div
@@ -72,7 +68,6 @@ exports[`Person should match the snapshot with all correct data passed in 1`] = 
       contentEditable="true"
       id="superlative"
       onBlur={[Function]}
-      onKeyUp={[Function]}
       suppressContentEditableWarning={true}
     >
       Most Likely to Be Accused of Murder
