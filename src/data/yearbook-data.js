@@ -16,7 +16,7 @@ const people = {
   ],
   students: [
     {id: 21, name: 'David', quote: 'What is going on!?', superlative: 'Most Likely To Win the Code Wars', photo: 'https://placekitten.com/200/300'},
-    {id: 22, name: 'Sam', quote: 'Please don\'t partner me with her again', superlative: 'Most Likely to See Every Movie Ever', photo: 'https://placekitten.com/200/300'},
+    {id: 22, name: 'Samantha', quote: 'Please don\'t partner me with her again', superlative: 'Most Likely to See Every Movie Ever', photo: 'https://placekitten.com/200/300'},
     {id: 23, name: 'Chris', quote: 'In all honesty ...', superlative: 'Most Likely To Become A CSS God', photo: 'https://placekitten.com/200/300'},
     {id: 24, name: 'Alyssa', quote: 'These tables are gross', superlative: 'Most Likely to Win Us Cleanliness Awards', photo: 'https://placekitten.com/200/300'},
     {id: 25, name: 'Evelyn', quote: 'What is this?', superlative: 'Most Likely to Not Exist', photo: 'https://placekitten.com/200/300'},
