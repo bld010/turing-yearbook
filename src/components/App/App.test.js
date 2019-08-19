@@ -2,16 +2,20 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 
+let wrapper = null;
+let instance = null;
 
 describe('App', () => {
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+    instance = wrapper.instance();
+  })
   it('should match the snapshot with all correct data', () => {
-    const wrapper = shallow(<App />)
+    // const wrapper = shallow(<App />)
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should be able to add a new student', () => {
-    const wrapper = shallow(<App />);
-    const instance = wrapper.instance();
     const mockStudent = {
       id: 99, 
       name: 'Travis', 
@@ -20,7 +24,6 @@ describe('App', () => {
       photo: './travis.jpg',
       cohortType: 'student'
     }
-    
     instance.addNewStudent(mockStudent)
     
     const expected = instance.state.students.includes(mockStudent);
@@ -30,8 +33,6 @@ describe('App', () => {
   })
 
   it('should be able to delete a person', () => {
-    const wrapper = shallow(<App />);
-    const instance = wrapper.instance();
     const mockPerson = {id: 13, name: 'Jeff', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Tell a Dad Joke', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
 
     instance.deletePerson(13, 'staff');
@@ -42,8 +43,6 @@ describe('App', () => {
     
   })
   it('should update state when the content is edited', () => {
-    const wrapper = shallow(<App />);
-    const instance = wrapper.instance();
     const mockPerson = {id: 13, name: 'Jeff', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Tell a Dad Joke', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
     const mockChangedPerson = {id: 13, name: 'Jeff Casimir', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Take Up More Than Allotted Time', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg', cohortType: 'staff'};
     const mockChangedPersonObject = {id: 13, name: 'Jeff Casimir', quote: '::thoughtful nonsense::', superlative: 'Most Likely to Take Up More Than Allotted Time', photo: 'https://i.ytimg.com/vi/DhqzMc_LXgQ/maxresdefault.jpg'};
@@ -55,7 +54,5 @@ describe('App', () => {
 
     expect(expected).toEqual(mockChangedPersonObject);
     expect(isOriginalPersonInState).toEqual(false);
-
   })
-
 })
