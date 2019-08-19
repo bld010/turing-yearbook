@@ -4,7 +4,7 @@ This is the first individual project in Mod 3 of the Front End Program at Turing
 
 ## The App
 
-
+![gif](./src/yearbook.gif)
 
 ## Objectives
 
